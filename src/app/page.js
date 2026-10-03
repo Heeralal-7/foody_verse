@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-// Yahan @ ki jagah ../components use karein:
-import Navbar from '../components/Navbar';
-import AuthModal from '../components/AuthModal';
+import Navbar from '@/components/Navbar';
+import AuthModal from '@/components/AuthModal';
 
 export default function Home() {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
@@ -28,10 +27,10 @@ export default function Home() {
         cartCount={cartCount}
       />
 
-      {/* 2. Page Content */}
+      {/* 2. Hero Section Placeholder */}
       <div className="max-w-7xl mx-auto px-4 py-16 text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-neutral-900">
-          Professional Food Architecture 🚀
+          Professional Food Architecture 
         </h1>
         <p className="text-gray-600 mt-4 text-base sm:text-lg max-w-xl mx-auto">
           Top-right corner me <b>Sign In</b> button par click karke Login/Signup Modal check karein!
