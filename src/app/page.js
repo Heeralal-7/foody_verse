@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Navbar from '@/app/components/Navbar';
 import AuthModal from '@/app/components/AuthModal';
+import Footer from '@/app/components/Footer';
 
 export default function Home() {
 
@@ -194,7 +195,12 @@ export default function Home() {
         onClose={() => setIsAuthOpen(false)}
         onLoginSuccess={handleLoginSuccess}
       />
+    
+    {/* ================================
+        FOOTER
+    ================================= */}
 
+    <Footer />
     </main>
   );
 }
